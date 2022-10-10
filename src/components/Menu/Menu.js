@@ -13,7 +13,7 @@ const Menu = () => {
       <Navbar bg="" expand="lg">
         <Container fluid>
           <NavLink to="/" className="fs-1">
-            Learn<span style={{ color: "red" }}>Up</span>
+            Level<span style={{ color: "red" }}>Up</span>
           </NavLink>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">

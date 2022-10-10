@@ -3,13 +3,14 @@ import "./Header.css";
 const Header = () => {
   return (
     <div className="header">
-      <div className="text-white">
+      <div className="text-white px-2">
         <h1 className=" fw-bold">
-          Start Learning With Learn<span style={{ color: "red" }}>Up</span> Now
+          LevelUp your knowledge With Level
+          <span style={{ color: "red" }}>Up</span> Now
         </h1>
         <p>
-          Study any topic, anytime. Choose from thousands of expert-led expelio
-          terms courses now.
+          Participate in Topics on any topic, anytime. Choose from thousands of
+          expert-led expelio terms courses now.
         </p>
       </div>
       <div>

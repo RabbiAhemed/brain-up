@@ -1,0 +1,9 @@
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .topics {
+    margin: 100px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+  }
+}
