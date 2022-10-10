@@ -1,9 +1,11 @@
+.menu {
+  background-color: #003783;
+}
 .menu a {
   text-decoration: none;
   color: white;
 }
 
 .right-half a {
-  /* margin: 0% 2%; */
   margin-right: 20px;
 }

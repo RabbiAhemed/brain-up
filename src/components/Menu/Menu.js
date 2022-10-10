@@ -10,10 +10,10 @@ import "./Menu.css";
 const Menu = () => {
   return (
     <div className="menu fw-bold">
-      <Navbar bg="info" expand="lg">
+      <Navbar bg="" expand="lg">
         <Container fluid>
           <NavLink to="/" className="fs-1">
-            Learn<span style={{ color: "red" }}>Up</span>{" "}
+            Learn<span style={{ color: "red" }}>Up</span>
           </NavLink>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">

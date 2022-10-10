@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Blog from "./components/Blog/Blog";
+import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
 import Statistics from "./components/Statistics/Statistics";
 import Topics from "./components/Topics/Topics";
@@ -12,6 +13,10 @@ function App() {
       path: "/",
       element: <Main></Main>,
       children: [
+        {
+          path: "/",
+          element: <Header></Header>,
+        },
         {
           path: "/topics",
           element: <Topics></Topics>,
