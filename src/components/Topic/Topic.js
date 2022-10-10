@@ -3,7 +3,6 @@ import { Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Topic.css";
 const Topic = ({ topic }) => {
-  console.log(topic);
   const { name, total, logo, id } = topic;
 
   return (

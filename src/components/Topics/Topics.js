@@ -4,7 +4,7 @@ import Topic from "../Topic/Topic";
 import "./Topics.css";
 const Topics = () => {
   const Topics = useLoaderData().data;
-  // console.log(Topics);
+
   return (
     <div className="topics">
       {Topics.map((topic) => (
