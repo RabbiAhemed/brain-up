@@ -3,7 +3,7 @@ import { Button, Card, Form } from "react-bootstrap";
 
 const Quiz = (quiz) => {
   //   console.log(typeof quiz);
-  //   console.log(quiz);
+  //   console.log(quiz.quiz);
   const { options, question, correctAnswer } = quiz.quiz;
   //   console.log(options);
 
