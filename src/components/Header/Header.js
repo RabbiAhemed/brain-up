@@ -2,15 +2,15 @@ import React from "react";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className="header">
-      <div className="text-white px-2">
+    <div className="header px-5">
+      <div className="text-white px-5">
         <h1 className=" fw-bold">
-          LevelUp your knowledge With Level
+          Train up your knowledge With Brain
           <span style={{ color: "red" }}>Up</span> Now
         </h1>
         <p>
-          Participate in Topics on any topic, anytime. Choose from thousands of
-          expert-led expelio terms courses now.
+          Participate in quizes on any topic, anytime. Choose from thousands of
+          expert-led expelio terms quize modules now.
         </p>
       </div>
       <div>

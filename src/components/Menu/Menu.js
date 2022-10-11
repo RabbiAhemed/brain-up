@@ -1,9 +1,9 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
+import Logo from "../Logo/Logo";
 import "./Menu.css";
 const Menu = () => {
   return (
@@ -11,7 +11,7 @@ const Menu = () => {
       <Navbar bg="" expand="lg">
         <Container fluid>
           <NavLink to="/" className="fs-1">
-            Level<span style={{ color: "red" }}>Up</span>
+            <Logo></Logo>
           </NavLink>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -21,6 +21,7 @@ const Menu = () => {
               navbarScroll
             ></Nav>
             <div className="d-flex right-half">
+              <NavLink to="/">Home</NavLink>
               <NavLink to="/topics">Topics</NavLink>
               <NavLink to="/statistics">Statistics</NavLink>
               <NavLink to="/blog">Blog</NavLink>

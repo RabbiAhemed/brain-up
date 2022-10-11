@@ -7,8 +7,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Quiz = (quiz) => {
-  // console.log(typeof quiz);
-  // console.log(quiz.quiz);
   const { options, question, correctAnswer } = quiz.quiz;
   //
   const showCorrectToast = () => {
@@ -19,25 +17,22 @@ const Quiz = (quiz) => {
   };
   //
   const answerCheck = (answer) => {
-    // console.log("My Answer:", answer);
     if (answer === correctAnswer) {
-      console.log("answer is right");
       showCorrectToast();
     } else {
       showWrongToast();
-      console.log("wrong");
     }
   };
 
   const showAnswer = (answer) => {
-    toast("Correct Answer: " + answer);
+    toast("Correct Answer is : " + answer);
   };
   return (
     <div>
-      <Card className="text-center m-5 bg-info">
+      <Card className="text-center m-5 quiz-card">
         <Card.Body>
           <div className="card-title">
-            <Card.Text className="question">{question}</Card.Text>
+            <Card.Text className="question text-dark">{question}</Card.Text>
             <FontAwesomeIcon
               icon={faEye}
               className="eye"
@@ -46,7 +41,7 @@ const Quiz = (quiz) => {
           </div>
           {options.map((option) => (
             <div
-              className="m-2 p-2 bg-warning"
+              className="m-2 p-2 options text-muted"
               onClick={() => answerCheck(option)}
             >
               {option}

@@ -3,16 +3,22 @@
   .image {
     height: 250px;
   }
-  .topicCard {
-    background-color: rgba(185, 95, 253, 0.1);
+  .topic-card {
+    /* background-color: rgba(185, 95, 253, 0.1); */
+    /* background-color: aliceblue; */
+    /* background-color: #f4f8fa; */
+    background-color: #f2f2f2;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 }
 
-/* .participate {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+.topic-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 5%;
+}
+.question {
+  font-style: italic;
+  color: black;
+}

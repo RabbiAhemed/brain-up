@@ -10,27 +10,15 @@ const Topic = ({ topic }) => {
 
   return (
     <div>
-      {/* <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={logo} className="img-fluid image" />
-        <Card.Body>
-          <Card.Title className="fw-bold">{name}</Card.Title>
-          <Card.Text className="text-muted font-italic fw-bold">
-            Total {total} questions
-          </Card.Text>
-          <Link to={`/topic/${id}`}>
-            <Button variant="info text-white fw-bold">Participate</Button>
-          </Link>
-        </Card.Body>
-      </Card> */}
-      <div className="topicCard text-center">
+      <div className="topic-card text-center">
         <div>
           <img src={logo} className="img-fluid image " alt="" />
         </div>
         <div className="p-5">
           <h4 className="fw-bold">{name}</h4>
-          <p>{total} question</p>
+          <p className="question text-dark text-muted">{total} questions</p>
           <Link to={`/topic/${id}`}>
-            <Button className="info text-white fw-bold d-flex align-items-center justify-content-space-around m-2">
+            <Button className="info text-white fw-bold d-flex align-items-center justify-content-space-around mx-auto">
               Participate
               <FontAwesomeIcon icon={faArrowRight} />
             </Button>
