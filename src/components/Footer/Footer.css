@@ -1,3 +1,16 @@
 .footer {
   background-color: #252c41;
 }
+.logo {
+  font-family: "Quantico";
+  font-weight: 700;
+}
+.my-name {
+  font-family: "Quantico";
+  font-weight: 400;
+}
+
+.copyright {
+  font-family: "Quantico";
+  font-weight: 400;
+}

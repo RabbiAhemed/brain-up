@@ -10,7 +10,7 @@ const Menu = () => {
     <div className="menu fw-bold">
       <Navbar bg="" expand="lg">
         <Container fluid>
-          <NavLink to="/" className="fs-1">
+          <NavLink to="/" className="fs-1 fw-bold">
             <Logo></Logo>
           </NavLink>
           <Navbar.Toggle aria-controls="navbarScroll" />

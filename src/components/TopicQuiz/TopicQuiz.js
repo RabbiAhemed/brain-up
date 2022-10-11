@@ -14,7 +14,7 @@ const TopicQuiz = () => {
         <span className="topic-name"> {name} </span>
         questions
       </h3>
-      {quizes.map((quiz, index) => (
+      {quizes.map((quiz) => (
         <Quiz key={quiz.id} quiz={quiz}></Quiz>
       ))}
     </div>
