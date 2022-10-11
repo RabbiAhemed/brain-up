@@ -1,0 +1,11 @@
+.question {
+  color: aliceblue;
+  font-weight: bold;
+}
+.eye {
+  color: white;
+}
+.card-title {
+  display: flex;
+  justify-content: space-between;
+}

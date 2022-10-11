@@ -3,11 +3,11 @@ import { useLoaderData } from "react-router-dom";
 import Topic from "../Topic/Topic";
 import "./Topics.css";
 const Topics = () => {
-  const Topics = useLoaderData().data;
+  const topics = useLoaderData().data;
 
   return (
     <div className="topics">
-      {Topics.map((topic) => (
+      {topics.map((topic) => (
         <Topic key={topic.id} topic={topic}></Topic>
       ))}
     </div>

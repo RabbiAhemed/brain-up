@@ -1,0 +1,18 @@
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .image {
+    height: 250px;
+  }
+  .topicCard {
+    background-color: rgba(185, 95, 253, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+/* .participate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */

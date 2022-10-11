@@ -6,6 +6,9 @@
   color: white;
 }
 
+.menu a:hover {
+  color: orange;
+}
 .right-half a {
   margin-right: 20px;
 }
