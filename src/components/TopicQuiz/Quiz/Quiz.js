@@ -11,22 +11,26 @@ const Quiz = (quiz) => {
   // console.log(quiz.quiz);
   const { options, question, correctAnswer } = quiz.quiz;
   //
-  const showToast = () => {
-    toast(" Let’s toast to this toast today! ");
+  const showCorrectToast = () => {
+    toast(" Correct Answer! ");
+  };
+  const showWrongToast = () => {
+    toast(" Wrong Answer,Try Again!!");
   };
   //
   const answerCheck = (answer) => {
     // console.log("My Answer:", answer);
     if (answer === correctAnswer) {
       console.log("answer is right");
-      showToast();
+      showCorrectToast();
     } else {
+      showWrongToast();
       console.log("wrong");
     }
   };
 
   const showAnswer = (answer) => {
-    console.log("correct answer:", answer);
+    toast("Correct Answer: " + answer);
   };
   return (
     <div>
@@ -50,6 +54,7 @@ const Quiz = (quiz) => {
           ))}
         </Card.Body>
       </Card>
+      <ToastContainer />
     </div>
   );
 };
