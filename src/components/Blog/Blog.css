@@ -1,0 +1,9 @@
+.blog-title {
+  text-align: start;
+  /* font-weight: 700; */
+  font-family: "sohne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.description {
+  font-weight: 500;
+  text-align: start;
+}
