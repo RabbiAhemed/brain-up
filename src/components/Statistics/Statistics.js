@@ -1,10 +1,5 @@
-import React from "react";
-import { Tooltip } from "recharts";
-import { useEffect, useState } from "react";
-import "./Statistics.css";
-
-import { Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis } from "recharts";
-import MyLineChart from "../MyLineChart/MyLineChart";
+import React, { useEffect, useState } from "react";
+import { Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
 const Statistics = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -13,30 +8,22 @@ const Statistics = () => {
       .then((data) => setData(data.data));
   }, []);
   return (
-    <div className="chart-container">
-      <BarChart
-        width={310}
-        height={320}
-        data={data}
-        margin={{
-          top: 20,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis dataKey="total" />
-
-        <Legend />
-        <Bar dataKey="total" fill="#82ca9d" />
-        <Bar dataKey="name" fill="#8884d8" />
-
-        <Tooltip />
-      </BarChart>
-      <MyLineChart></MyLineChart>
-    </div>
+    <LineChart
+      width={310}
+      height={300}
+      data={data}
+      margin={{
+        top: 20,
+        right: 30,
+        left: 20,
+        bottom: 5,
+      }}
+    >
+      <Line dataKey={"total"} stroke="#8884d8" activeDot={{ r: 8 }}></Line>
+      <XAxis dataKey={"name"} stroke="#82ca9d"></XAxis>
+      <YAxis></YAxis>
+      <Tooltip />
+    </LineChart>
   );
 };
 

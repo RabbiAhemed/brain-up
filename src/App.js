@@ -8,6 +8,7 @@ import Main from "./layouts/Main";
 import Home from "./components/Home/Home";
 import TopicQuiz from "./components/TopicQuiz/TopicQuiz";
 import Topic from "./components/Topic/Topic";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   const router = createBrowserRouter([
@@ -51,7 +52,10 @@ function App() {
           element: <Statistics></Statistics>,
         },
 
-        { path: "*", element: <div>Not found</div> },
+        {
+          path: "*",
+          element: <NotFound></NotFound>,
+        },
       ],
     },
   ]);

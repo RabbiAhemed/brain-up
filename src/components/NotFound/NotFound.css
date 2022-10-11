@@ -1,0 +1,22 @@
+.not-found {
+  /* background-image: url(https://i.ibb.co/B3StCjD/5203299.jpg); */
+  background-color: #55afd2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found a {
+  text-decoration: none;
+}
+.image {
+  height: 50%;
+  width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+  .not-found {
+    display: flex;
+    flex-direction: column;
+  }
+}
