@@ -4,10 +4,7 @@
     height: 250px;
   }
   .topic-card {
-    /* background-color: rgba(185, 95, 253, 0.1); */
-    /* background-color: aliceblue; */
-    /* background-color: #f4f8fa; */
-    background-color: #f2f2f2;
+    background-color: #e6e7e8;
     display: flex;
     justify-content: space-around;
     align-items: center;

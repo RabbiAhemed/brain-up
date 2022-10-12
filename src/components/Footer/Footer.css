@@ -5,6 +5,10 @@
   font-family: "Quantico";
   font-weight: 700;
 }
+.logo a {
+  text-decoration: none;
+  color: white;
+}
 .my-name {
   font-family: "Quantico";
   font-weight: 400;

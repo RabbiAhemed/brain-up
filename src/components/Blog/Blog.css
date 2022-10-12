@@ -1,7 +1,8 @@
 .blog-title {
   text-align: start;
-  /* font-weight: 700; */
-  font-family: "sohne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Signika Negative";
 }
 .description {
   font-weight: 500;

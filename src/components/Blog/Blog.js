@@ -37,7 +37,19 @@ const Blog = () => {
       </div>
       <div>
         <h4 className="blog-title fw-bolder">UseRef</h4>
-        <p className="description"></p>
+        <p className="description">
+          The useRef Hook in React can be used to directly access DOM nodes, as
+          well as persist a mutable value across rerenders of a component.{" "}
+          <br />
+          The useRef is a hook that allows to directly create a reference to the
+          DOM element in the functional component. The useRef returns a mutable
+          ref object. This object has a property called .current. The value is
+          persisted in the refContainer.current property. These values are
+          accessed from the current property of the returned object. The object
+          can persist a value for a full lifetime of the component. <br />
+          Essentially, a React.ref is like a "box" that can hold a mutable value
+          in its .current record field. <br />
+        </p>
       </div>
     </div>
   );

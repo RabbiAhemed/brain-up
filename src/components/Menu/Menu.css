@@ -1,7 +1,5 @@
 .menu {
   background-color: #003783;
-  position: sticky;
-  top: 0;
 }
 .menu a {
   text-decoration: none;
