@@ -15,7 +15,7 @@ const Statistics = () => {
       .then((data) => setData(data.data));
   }, []);
   return (
-    <ResponsiveContainer width="75%" height={400}>
+    <ResponsiveContainer width="98%" height={400}>
       <LineChart
         width={310}
         height={300}
