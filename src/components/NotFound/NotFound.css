@@ -17,5 +17,6 @@
   .not-found {
     display: flex;
     flex-direction: column;
+    padding: 10%;
   }
 }
